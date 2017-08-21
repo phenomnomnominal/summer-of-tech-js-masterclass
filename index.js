@@ -6,6 +6,7 @@ let app = express();
 let gameState = new GameState();
 
 app.use(bodyParser.json());
+app.use(express.static('client'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
