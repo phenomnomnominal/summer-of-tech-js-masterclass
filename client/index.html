@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+
+        <title>TIC TAC TOE</title>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <main></main>
+        <script src="https://cdn.jsdelivr.net/es6.shim/0.35.1/es6-shim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js"></script>
+        <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+        <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+        <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+        <script type="text/babel" src="/board.js"></script>
+        <script type="text/babel" src="/join-game.js"></script>
+        <script type="text/babel" src="/tic-tac-toe.js"></script>
+        <script type="text/babel">
+            ReactDOM.render(<TicTacToe/>, document.querySelector('main'));
+        </script>
+    </body>
+</html>
