@@ -11,7 +11,7 @@ class TicTacToe extends React.Component {
 
     componentDidMount () {
         this.loadGameState();
-        setInterval(() => this.loadGameState(), 1000);
+        // setInterval(() => this.loadGameState(), 1000);
     }
 
     loadGameState () {
