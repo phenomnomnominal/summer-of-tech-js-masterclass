@@ -1,9 +1,1 @@
-@import 'https://fonts.googleapis.com/css?family=Slabo+27px';
-
-html, body { margin: 0; min-width: 320px; text-align: center; }
-body, input { font-family: 'Slabo 27px', serif; font-size: 20px; }
-main { width: 100%; }
-
-input { text-align: center; }
-
-button { width: 100px; height: 100px; background: none; border: 1px black solid; font-size: 50px; vertical-align: top; }
+// TODO
