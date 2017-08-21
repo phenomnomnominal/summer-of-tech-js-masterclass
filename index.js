@@ -12,8 +12,8 @@ app.post('/join-game', (req, res) => {
     let { name, symbol } = req.body;
 
     try {
-        let token = gameState.addPlayer({ name, symbol });
-        res.status(200).json({ token });
+        gameState.addPlayer({ name, symbol });
+        res.status(200).json({ token: 'JOINED GAME' });
     } catch (e) {
         let { message } = e;
         res.status(400).json({ message });
@@ -25,10 +25,10 @@ app.get('/game-state', (req, res) => {
 });
 
 app.post('/take-turn', (req, res) => {
-    let { move, token } = req.body;
+    let { move } = req.body;
     try {
-        gameState.addMove({ move, token });
-        res.status(200).end();
+        gameState.addMove({ move });
+        res.status(200).json({ });
     } catch (e) {
         res.status(400).json({
             message: e.message
